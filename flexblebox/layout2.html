@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu fixed,Content dynamic</title>
+    <style>
+    body{
+        overflow: hidden;
+    }
+     .Grid-left{
+         display: flex;
+         width: 100%;
+         float: left;  
+         align-items: flex-start;
+     }
+       .Grid-left>.Grid-cell{
+           padding-top:210%;
+           flex:3;
+           margin: 1px;
+           background:navajowhite;  
+       }
+       .Grid-cell.Grid-item{  
+           padding-top: 140%;
+           flex:1;
+           margin: 1px;
+           background:#ccc;
+       }
+        
+       @media screen and  (max-width: 768px){
+          .Grid-left{
+            display: flex;
+            width: 100%;
+            float: left;  
+            flex-direction: row;
+         }
+        .Grid-left>.Grid-cell{
+             padding-top:300%;
+             flex:3;
+             margin: 1px;
+             background:navajowhite;  
+       }
+      .Grid-cell.Grid-item{  
+           padding-top: 300%;
+           flex:1;
+           margin: 1px;
+           background:#ccc;
+       }
+       }
+     @media screen and  (max-width: 368px){
+          .Grid-left{
+            display: flex;
+            width: 110%;
+            float: left;  
+            flex-direction: row;
+         }
+        .Grid-left>.Grid-cell{
+             padding-top:0%;
+             flex:0;
+             margin: 1px;
+             background:navajowhite;  
+       }
+      .Grid-cell.Grid-item{  
+           padding-top: 700%;
+           flex:1;
+           margin: 1px;
+           background:#ccc;
+       }
+       }
+    </style>
+</head>
+<body>
+    <div class="Grid-left">
+        <div class="Grid-cell Grid-item"></div>
+        <div class="Grid-cell"></div>
+    </div>
+</body>
+</html>

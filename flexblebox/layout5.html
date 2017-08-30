@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>menu and content dynamic 菜单和内容动态</title>
+    <style>
+       body{
+          overflow: hidden;
+       }
+      .Grid-left{
+          width: 100%;
+          padding-top: 40%;
+          background-color: #ccc;
+          display: flex;
+          flex-flow: row-reverse wrap;
+          align-content: flex-end;
+       }
+      .Grid-left>.Grid-cell{
+         box-sizing: border-box;
+         background-color: yellow;
+         flex: 0 0 25%;
+         padding-top: 40%;  
+       }
+      
+    </style>
+</head>
+<body>
+    
+     <div class="Grid-left">
+        <div class="Grid-cell"></div>
+       
+    </div>
+     
+</body>
+</html>

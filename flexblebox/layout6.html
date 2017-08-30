@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>columns,all dynamic</title>
+    <style>
+      body{
+        overflow: hidden;
+    }
+     .Grid-top{
+         display: flex;  
+         width: 100%;     
+         float: left;
+     }
+    .Grid-top>.Grid-cell{
+           padding-top:10%;
+           flex: 1;
+           margin: 1px;
+           background:lawngreen;  
+    }  
+     .Grid-left{
+         display: flex;  
+         width: 30%;     
+         flex-direction: column;
+	     flex-wrap: wrap;
+         float: left;
+     }
+    .Grid-left>.Grid-cell{
+           padding-top:150%;
+           width: 100%;
+           margin: 1px;
+           background:navajowhite;  
+    }  
+      .Grid-left>.Grid-cell1{
+           padding-top:60%;
+           width: 100%;
+           margin: 1px;
+           background:navajowhite;  
+    }  
+     .Grid-middle{
+          display: flex;
+          width: 45%;  
+          float: left;
+          
+       }
+       .Grid-middle>.Grid-cell{
+           padding-top:140%;
+           flex:1;
+           margin: 1px;
+           background:gold;  
+       }
+    
+       .Grid-right{
+          display: flex;
+          width: 25%;  
+          float: left;
+           flex-direction: column;
+	     flex-wrap: wrap;
+          
+       }
+        .Grid-right>.Grid-cell{
+           padding-top:125%;
+           flex:1;
+           margin: 1px;
+           background:#ccc;  
+       }
+    </style>
+</head>
+<body>
+     <div class="Grid-top">
+        <div class="Grid-cell"></div>
+     </div>
+     <div class="Grid-left">
+        <div class="Grid-cell"></div>
+          <div class="Grid-cell1"></div>
+    </div>
+     <div class="Grid-middle">
+        <div class="Grid-cell"></div>
+    </div>
+     <div class="Grid-right">
+        <div class="Grid-cell"></div>
+        <div class="Grid-cell"></div>
+    </div>
+</body>
+</html>

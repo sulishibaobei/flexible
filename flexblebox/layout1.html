@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initail-scale=1.0, user-scable=no"/>
+    <title>menu and content dynamic 菜单和内容动态</title>
+    <style>
+       body{
+          overflow: hidden;
+          margin: 0 auto;
+          width: 100%;
+          height: auto;
+       }
+      .Grid-left{
+          display: flex;
+          width: 70%;  /*673.5px*/ 
+          align-items: stretch;
+          float: left;         
+         }
+      .Grid-left>.Grid-cell{
+           padding-top:100%; /*现在是宽的70% 现在是472.84px*/
+           flex:1; 
+           margin: 1px; /* */
+           background:navajowhite;  
+       }
+      .Grid-right{
+          display: flex;
+          width: 30%;  
+          float: left;
+          flex-direction: column;
+       }
+      .Grid-right>.Grid-cell{
+           flex:1;
+           margin: 3px;
+           background: #ccc;
+           padding-top: 100%;
+       } 
+         @media screen and (max-width: 1600px) {
+        .Grid-left{
+          display: flex;
+          width: 70%;   
+          align-items: stretch;
+          float: left;         
+         }
+         .Grid-left>.Grid-cell{
+           padding-top:120%;  
+           flex:1; 
+           margin: 1px;  
+           background:navajowhite;  
+           
+       }
+        .Grid-right{
+          display: flex;
+          width: 30%;  
+          float: left;
+          flex-direction: column;
+       }
+        .Grid-right>.Grid-cell{
+           flex:1;
+           margin: 3px;
+           background: #ccc;
+           padding-top: 135%;
+          } 
+        }
+         @media screen and (max-width: 1200px) {
+        .Grid-left{
+          display: flex;
+          width: 100%;  
+          align-items: stretch;
+          float: left;         
+         }
+         .Grid-left>.Grid-cell{
+           padding-top:60%;  
+           flex:1; 
+           margin: 1px; 
+           background:navajowhite;  
+           
+       }
+        .Grid-right{
+          display: flex;
+          width: 100%;  
+          float: left;
+          flex-direction: row;
+       }
+        .Grid-right>.Grid-cell{
+           flex:1;
+           margin: 3px;
+           background: #ccc;
+           padding-top: 35%;
+       } 
+     }
+     @media screen and (max-width: 1024px) {
+         .Grid-left{
+          display: flex;
+          width: 100%;   
+          align-items: stretch;
+          float: left;         
+         }
+         .Grid-left>.Grid-cell{
+           padding-top:100%;  
+           flex:1; 
+           margin: 1px; 
+           background:navajowhite;     
+       } 
+        .Grid-right{
+          display: flex;
+          width: 100%;  
+          float: left;
+          flex-direction: row;
+       }
+        .Grid-right>.Grid-cell{
+           flex:1;
+           margin: 3px;
+           background: #ccc;
+           padding-top: 45%;
+       } 
+     }
+
+       @media screen and (max-width: 936px) { 
+         .Grid-left{
+          display: flex;
+          width: 100%;   
+          align-items: stretch;
+          float: left;         
+         }
+         .Grid-left>.Grid-cell{
+           padding-top:80%;  
+           flex:1; 
+           margin: 1px;  
+           background:navajowhite;  
+           
+       }
+        .Grid-right{
+          display: flex;
+          width: 100%;  
+          float: left;
+          flex-direction: row;
+       }
+        .Grid-right>.Grid-cell{
+           flex:1;
+           margin: 3px;
+           background: #ccc;
+           padding-top: 55%;
+       } 
+     }
+ @media screen and (max-width: 768px) { 
+      .Grid-left{
+          display: flex;
+          width: 100%;   
+          float: left;         
+         }
+         .Grid-left>.Grid-cell{
+           padding-top:100%;  
+           flex:1; 
+           margin: 1px;  
+           background:navajowhite;     
+       }
+        .Grid-right{
+          display: flex;
+          width: 100%;  
+          float: left;
+          flex-direction: row;
+       }
+        .Grid-right>.Grid-cell{
+           flex:1;
+           margin: 3px;
+           background: #ccc;
+           padding-top: 100%;
+       } 
+     }
+     @media screen and (max-width: 500px){ 
+        .Grid-left{
+          display: flex;
+          width: 160%;   
+          float: left;         
+         }
+         .Grid-left>.Grid-cell{
+           padding-top:140%;  
+           flex:1; 
+           margin: 1px;  
+           background:navajowhite;     
+       }
+        .Grid-right{
+          display: flex;
+          width: 160%;  
+          float: left;
+          flex-direction: column;
+       }
+        .Grid-right>.Grid-cell{
+           flex:1;
+           margin: 3px;
+           background: #ccc;
+           padding-top: 90%;
+       } 
+         .Grid-right>.Grid-cell:nth-child(2){
+           flex:1;
+           margin: 3px;
+           background: #ccc;
+           padding-top: 0%;
+       } 
+        
+     }
+     
+  
+ @media screen and (max-width: 300px) { 
+    .Grid-left{
+          display: flex;
+          width: 140%;  
+          align-items: stretch;
+          float: left;         
+         }
+         .Grid-left>.Grid-cell{
+           padding-top:500%;  
+           flex:1; 
+           margin: 1px; 
+           background:navajowhite;     
+       }
+        .Grid-right{
+          display: flex;
+          width: 200%;  
+          float: left;
+          flex-direction: column;
+       }
+        .Grid-right>.Grid-cell{
+           flex:1;
+           margin: 3px;
+           background: #ccc;
+           padding-top: 0%;
+       } 
+     }
+    
+    
+        
+      
+       
+    </style>
+</head>
+<body>
+    
+     <div class="Grid-left">
+        <div class="Grid-cell"></div>
+    </div>
+    <div class="Grid-right">
+        <div class="Grid-cell"></div>
+        <div class="Grid-cell"></div>
+    </div> 
+    
+ 
+</body>
+</html>
